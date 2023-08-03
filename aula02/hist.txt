@@ -1,0 +1,61 @@
+  112  sudo ls
+  113  clear
+  114  man ls
+  115  man find
+  116  ls
+  117  pwd
+  118  cd ..
+  119  pwd
+  120  cd
+  121  pwd
+  122  ls
+  123  cat client.py 
+  124  head client.py 
+  125  tail client.py 
+  126  tail -n5 client.py 
+  127  ls /var/log/kern.log -l
+  128  cat /var/log/kern.log 
+  129  more /var/log/kern.log 
+  130  du -h
+  131  pwd
+  132  df -hT
+  133  history
+  134  mkdir test1
+  135  ls -l
+  136  rm -r test1/
+  137  echo "A B C D" > test.txt
+  138  ls
+  139  cat test.txt 
+  140  touch test2.txt
+  141  ls -l
+  142  nano test.txt 
+  143  cp test.txt test2.txt 
+  144  vim test2.txt 
+  145  diff test.txt test2.txt 
+  146  cat test.txt 
+  147  cat test2.txt 
+  148  vim test2.txt 
+  149  clear
+  150  cat test.txt 
+  151  cat test2.txt 
+  152  diff test.txt test2.txt 
+  153  ls -l
+  154  chmod go-rw
+  155  chmod go-rw test.txt 
+  156  ls -l test.txt 
+  157  #chown user:group file
+  158  find . -iname test
+  159  find . -iname test*
+  160  find . -iname test.xt
+  161  ls
+  162  find . -iname test.txt
+  163  find . -iname Test.txt
+  164  grep -rni test *
+  165  history
+  166  grep -rni test * | wc
+  167  grep -rni test * | wc -l
+  168* find . -iname Test.txt | wc 
+  169  grep -rni test * 
+  170  grep -rni test * | wc
+  171  grep -rni test * | grep -v firefox |  wc
+  172  history > hist.tx
