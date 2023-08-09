@@ -1,0 +1,1000 @@
+ 1037  ./step8.sh 
+ 1038  ./step9.sh 
+ 1039  ./step11.sh 
+ 1040  export WORKSPACE_ID=$pcid
+ 1041  export OKTALINK1=https://hpe-greenlake-ci1g2l48d6bgfp0k3ho0.okta.com/oauth2/default
+ 1042  export OKTALINK2=https://hpe-greenlake-ci1g2l48d6bgfp0k3ho0.okta.com/oauth2/aust0frpktLWIxDl5357
+ 1043  ./step9.sh 
+ 1044  ./step11.sh 
+ 1045  ls
+ 1046  mkdir okta_playground
+ 1047  cd okta_playground/
+ 1048  ls
+ 1049  vim test.go
+ 1050  go test.go 
+ 1051  go
+ 1052  go build test.go 
+ 1053  ls
+ 1054  ./test 
+ 1055  ./test | python -m
+ 1056  ./test | python3 -m
+ 1057  ./test | python3 -mjson.tool
+ 1058  ls
+ 1059  mv test.go user_get.go
+ 1060  rm test 
+ 1061  ls
+ 1062  vim user_create_staged.go
+ 1063  go 
+ 1064  go run user_create_staged.go 
+ 1065  go run user_create_staged.go  
+ 1066  vim user_create_active.go
+ 1067  go run user_create_active.go 
+ 1068  vim user_delete.go
+ 1069  go run user_delete.go 
+ 1070  ls
+ 1071  vimu user_list.go
+ 1072  vim user_list.go
+ 1073  go run user_list.go 
+ 1074  go run user_list.go | python3 -mjson.tool
+ 1075  ls
+ 1076  ll
+ 1077  ls -l
+ 1078  vim group_create.go
+ 1079  go run group_create.go 
+ 1080  vim group_get.go
+ 1081  go run group_get.go 
+ 1082  vim group_list.go
+ 1083  go run group_list.go 
+ 1084  ls
+ 1085  vim group_remove.go
+ 1086  go run group_remove.go 
+ 1087  ls
+ 1088  vim group_add_user.go
+ 1089  go run group_add_user.go 
+ 1090  vim group_remove_user.go
+ 1091  go run group_remove_user.go 
+ 1092  ls
+ 1093  ls -l
+ 1094  cd ..
+ 1095  git clone https://github.hpe.com/gustavo-ber-brand/okta_playground.git
+ 1096  mv okta_playground okta_playground_
+ 1097  git clone https://github.hpe.com/gustavo-ber-brand/okta_playground.git
+ 1098  ls
+ 1099  cd okta_playground
+ 1100  mv ../okta_playground_/* .
+ 1101  rm -r ../okta_playground_
+ 1102  ls
+ 1103  git add .
+ 1104  git status
+ 1105  git commit -m "Initial code snippets for okta use"
+ 1106  git pus
+ 1107  git push
+ 1108  cd ..
+ 1109  ls
+ 1110  cd glcp/orgs-automated-tenant-migration_at_temp-orgs-okta-process/
+ 1111  ls
+ 1112  cd lambda/orgs-create-okta-token/
+ 1113  ls
+ 1114  vim main.go 
+ 1115  ls
+ 1116  vim cmd/service/main.go 
+ 1117  ls
+ 1118  vim logic/load-token.go 
+ 1119  ls
+ 1120  ls internal/pkg/oktakeys
+ 1121  vim internal/pkg/oktakeys/
+ 1122  vim internal/pkg/oktakeys/oktakeys.go 
+ 1123  vim logic/load-token.go 
+ 1124  ls
+ 1125  cd glcp/
+ 1126  ls
+ 1127  cd orgs-scim/
+ 1128  ls
+ 1129  git status
+ 1130  git checkout master
+ 1131  git stat
+ 1132  git checkout main
+ 1133  git pull
+ 1134  git status
+ 1135  git checkout develop
+ 1136  git pull
+ 1137  git branch -a | grep scim
+ 1138  git checkout merlin-scim-def
+ 1139  git pull
+ 1140  ls
+ 1141  git status
+ 1142  ls
+ 1143  docker-compose up
+ 1144  cd glcp/
+ 1145  ls
+ 1146  cd orgs-scim/
+ 1147  ls
+ 1148  cat README.md 
+ 1149  vim README.md 
+ 1150  go run cmd/mock/main.go 
+ 1151  export | grep CLUS
+ 1152  export CLUSTER_NAME=fakeClusterName
+ 1153  go run cmd/mock/main.go 
+ 1154  unset http{,s}_proxy 
+ 1155  ls
+ 1156  code .
+ 1157  cd glcp/orgs-scim/
+ 1158  export AWS_ACCESS_KEY_ID=fake export AWS_SECRET_ACCESS_KEY=fake
+ 1159  export AWS_ROLE_ARN=arn:aws:iam::000000000000:role/orgs-scim-svc-role
+ 1160  export CLUSTER_NAME=fakeClusterName
+ 1161  export AWS_ACCESS_KEY_ID=fake
+ 1162  export AWS_SECRET_ACCESS_KEY=fake
+ 1163  export AWS_ROLE_ARN=arn:aws:iam::000000000000:role/orgs-scim-svc-role
+ 1164  export CLUSTER_NAME=fakeClusterName
+ 1165  ./bin/create-aws-resources.sh
+ 1166  ping localhost
+ 1167  ./bin/create-aws-resources.sh
+ 1168  air
+ 1169  bash -x ./bin/create-aws-resources.sh
+ 1170  cat  ./bin/create-aws-resources.sh
+ 1171  aws
+ 1172  aws secretsmanager
+ 1173  ping localhost:4566
+ 1174  man pong
+ 1175  man ping
+ 1176  ping /?
+ 1177  ping --help
+ 1178  cat  ./bin/create-aws-resources.sh
+ 1179  bash -x ./bin/create-aws-resources.sh
+ 1180  sudo vim /etc/hosts
+ 1181  ping localhost
+ 1182  sudo vim /etc/hosts
+ 1183  ping localhost
+ 1184  history
+ 1185  bash -x ./bin/create-aws-resources.sh
+ 1186  ifconfig
+ 1187  ip addr
+ 1188  bash -x ./bin/create-aws-resources.sh
+ 1189  wget  http://localhost:4566 
+ 1190  unset http{,s}_proxy 
+ 1191  wget  http://localhost:4566 
+ 1192  bash -x ./bin/create-aws-resources.sh
+ 1193  air
+ 1194  ls
+ 1195  pwd
+ 1196  cd glcp/
+ 1197  ls
+ 1198  cd orgs-scim/
+ 1199  git status
+ 1200  git diff
+ 1201  git checkout add-get-groups-okta
+ 1202  git status
+ 1203  git checkout main
+ 1204  git pull
+ 1205  unset http{,s}_proxy 
+ 1206  git pull
+ 1207  git checkout develop
+ 1208  git pull
+ 1209  git checkout merlin-scim-def 
+ 1210  git pull
+ 1211  git branch -a
+ 1212  screen -ls
+ 1213  screen -S gb
+ 1214  screen -x
+ 1215  ls
+ 1216  cd glcp/orgs-scim/
+ 1217  ls
+ 1218  git status
+ 1219  git checkout add-options-endpoint 
+ 1220  git diff develop
+ 1221  git status
+ 1222  git checkout add-get-groups-okta 
+ 1223  git log
+ 1224  code .
+ 1225  ls ..
+ 1226  code .
+ 1227  git status
+ 1228  git diff 
+ 1229  ls
+ 1230  code .
+ 1231  sudo apt search libc
+ 1232  sudo apt list --installed | grep libc
+ 1233  sudo apt list --installed | grep libc6
+ 1234  grep -rni 
+ 1235  grep -rni LifyCycle *
+ 1236  git status
+ 1237  grep -rni LifeCycle *
+ 1238  grep -rni Check*LifeCycle *
+ 1239  grep -rni Check.*LifeCycle *
+ 1240  code .
+ 1241  grep -rni Check.*LifeCycle *
+ 1242  sudo reboot
+ 1243  git status
+ 1244  git diff
+ 1245  cd internal/pkg/
+ 1246  ls
+ 1247  cp -r conn orgs
+ 1248  cd orgs/
+ 1249  rm service_test.go service-dependencies_mock.go 
+ 1250  mv service.go orgs-base.go
+ 1251  git status
+ 1252  export
+ 1253  unset http{,s}_proxy 
+ 1254  ifcofnig
+ 1255  ifconfig
+ 1256  ip addr
+ 1257  ls
+ 1258  ifcinfog
+ 1259  ifconfig
+ 1260  ip addr
+ 1261  screen -x
+ 1262  screen -S gb
+ 1263  screen -x
+ 1264  wget http://localhost:3309/organizations/v2alpha1/organization/scim/v2/Group
+ 1265  unset http{,s}_proxy 
+ 1266  wget http://localhost:3309/organizations/v2alpha1/organization/scim/v2/Group
+ 1267  wget http://localhost:3309/organizations/v2alpha1/organization/scim/v2/Groups
+ 1268  wget http://localhost:3309/organizations/v2alpha1/scim/v2/Groups
+ 1269  wget http://localhost:9906/organizations/v2alpha1/scim/v2/Groups
+ 1270  code .
+ 1271  cd glcp/orgs-scim/
+ 1272  ls
+ 1273  code .
+ 1274  wget http://localhost:9906/organizations/v2alpha1/scim/v2/Groups
+ 1275  git status
+ 1276  git diff
+ 1277  git diff > ../code_20230704.diff
+ 1278  vim ../code_20230704.diff 
+ 1279  ls
+ 1280  cd internal/pkg/orgsbase/
+ 1281  ls
+ 1282  mockgen --help
+ 1283  sudo apt install mockgen
+ 1284  unset http{,s}_proxy 
+ 1285  sudo apt install mockgen
+ 1286  mockgen --help
+ 1287  ls
+ 1288  mockgen -source=orgs-base.go -destination=orgs-base_mock.go -package=orgsbase
+ 1289  ls
+ 1290  mockgen -source orgs-base.go -destination orgs-base_mock.go -package=orgsbase
+ 1291  mockgen -source orgs-base.go -destination orgs-base_mock.go 
+ 1292  mockgen -v -source orgs-base.go -destination orgs-base_mock.go 
+ 1293  mockgen -source=orgs-base.go -destination=orgs-base_mock.go -package=orgsbase
+ 1294  ls
+ 1295  vim orgs-base.go 
+ 1296  mockgen -source=orgs-base.go -destination=orgs-base_mock.go -package=orgsbase
+ 1297  git status
+ 1298  git add ../../app/logic/v2alpha1/groups.go ../../app/logic/v2alpha1/orgs-actions.go ../../app/server/config/config.go ../../app/server/server.go orgs-base.go ../../../local-config/config.yaml
+ 1299  git status
+ 1300  git commit -m "Further dev still on orgs-scim, to be ported at user-group-management repo"
+ 1301  git status
+ 1302  git push
+ 1303  git log
+ 1304  mockgen -source=orgs-base.go -destination=orgs-base_mock.go -package=orgsbase
+ 1305  ls
+ 1306  go test
+ 1307  go test ./...
+ 1308  ls
+ 1309  mockgen -source=orgs-base.go -destination=orgs-base_mock.go -package=orgsbase
+ 1310  cd ..
+ 1311  ls
+ 1312  cd conn/n
+ 1313  cd conn/
+ 1314  ls
+ 1315  mockgen -source=service.go -destination=service_mock.go -package=conn
+ 1316  cd ../acctmgt/
+ 1317  ls
+ 1318  mockgen -source=user-invite.go -destination=abc_mock.go -package=acctmgt
+ 1319  mockgen -source=user-invite.go -destination=user-invite-dependencies_mock_.go -package=acctmgt
+ 1320  mockgen -v
+ 1321  mockgen --version
+ 1322  man mockgen
+ 1323  go -v
+ 1324  go --version
+ 1325  go version
+ 1326  apt show mockgen
+ 1327  apt-get show mockgen
+ 1328  sudo apt update
+ 1329  sudo apt install mockgen
+ 1330  cd ..
+ 1331  ls
+ 1332  cd ..
+ 1333  cd pkg/
+ 1334  ls
+ 1335  cd orgsbase/
+ 1336  mockgen
+ 1337  git status
+ 1338  wget http://localhost:9906/organizations/v2alpha1/scim/v2/Groups
+ 1339  git status
+ 1340  git diff
+ 1341  git status
+ 1342  git add orgs-base.go 
+ 1343  git commit -m "Prep for mockgen"
+ 1344  git push
+ 1345  mockgen -source=orgs-base.go -destination=orgs-base_mock.go -package=orgsbase
+ 1346  ls
+ 1347  ls -l
+ 1348  vim orgs-base_mock.go 
+ 1349  got test ./...
+ 1350  go test ./...
+ 1351  ls
+ 1352  git status
+ 1353  git add orgs-base_mock.go 
+ 1354  git commit -m "Mocks for orgs-base pkg"
+ 1355  git push
+ 1356  git diff main
+ 1357  git diff master
+ 1358  git diff develop
+ 1359  git status
+ 1360  cat Groups 
+ 1361  ls
+ 1362  pwd
+ 1363  cd ..
+ 1364  ls
+ 1365  cd app/logic/v2alpha1/
+ 1366  ls
+ 1367  pwd
+ 1368  ls
+ 1369  ls ..
+ 1370  ls ../..
+ 1371  cd ../
+ 1372  ks
+ 1373  ls
+ 1374  cd ../server/
+ 1375  ls
+ 1376  pwd
+ 1377  ls
+ 1378  cd ..
+ 1379  code .
+ 1380  wget http://localhost:9906/organizations/v2alpha1/scim/v2/Groups
+ 1381  wget http://localhost:9902/organizations/v2alpha1/scim/v2/Groups
+ 1382  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1383  wget http://localhost:9904/organizations/v2alpha1/scim/v2/Groups
+ 1384  wget http://localhost:9905/organizations/v2alpha1/scim/v2/Groups
+ 1385  wget http://localhost:9906/organizations/v2alpha1/scim/v2/Groups
+ 1386  wget http://localhost:9907/organizations/v2alpha1/scim/v2/Groups
+ 1387  wget http://localhost:9902/organizations/v2alpha1/scim/v2/Groups
+ 1388  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1389  git status
+ 1390  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1391  cd ../user-group-management/
+ 1392  ls
+ 1393  git status
+ 1394  cat README.md 
+ 1395  docker-compose up
+ 1396  docker container remove wiremock-container
+ 1397  docker-compose up
+ 1398  docker container remove wiremock-container
+ 1399  docker-compose up
+ 1400  git status
+ 1401  git checkout main
+ 1402  git status
+ 1403  git pull
+ 1404  cat README.md 
+ 1405  docker-compose up
+ 1406  git pull
+ 1407  docker-compose up
+ 1408  git pull
+ 1409  git log
+ 1410  docker-compose up
+ 1411  cd glcp/
+ 1412  ls
+ 1413  cd user-group-management/
+ 1414  ls
+ 1415  git pull
+ 1416  unset http{,s}_proxy 
+ 1417  ls
+ 1418  git pull
+ 1419  unset http{,s}_proxy 
+ 1420  git status
+ 1421  git pull
+ 1422  ls
+ 1423  cd internal/
+ 1424  ls
+ 1425  cd pkg/
+ 1426  ls
+ 1427  cp -r /home/gbrand/glcp/orgs-scim/internal/pkg/orgsbase .
+ 1428  ls
+ 1429  git status
+ 1430  cd ../app/
+ 1431  ls
+ 1432  cd ..
+ 1433  find
+ 1434  ls
+ 1435  ls ..
+ 1436  ls
+ 1437  ls scim/
+ 1438  ls scim/generated/
+ 1439  ls scim/generated/server/
+ 1440  ls
+ 1441  cd app/
+ 1442  ls
+ 1443  cd logic/
+ 1444  ls
+ 1445  cd v2alpha1/
+ 1446  ls
+ 1447  vim groups.go 
+ 1448  ls
+ 1449  cp /home/gbrand/glcp/orgs-scim/internal/app/logic/v2alpha1/orgs-actions.go .
+ 1450  vim -o /home/gbrand/glcp/orgs-scim/internal/app/logic/v2alpha1/groups.go groups.go 
+ 1451  vim -O /home/gbrand/glcp/orgs-scim/internal/app/logic/v2alpha1/groups.go groups.go 
+ 1452  cd ../../server/
+ 1453  ls
+ 1454  vim -o /home/gbrand/glcp/orgs-scim/internal/app/server/server.go server.go 
+ 1455  ls
+ 1456  vim scim-routes.go 
+ 1457  vim -o ~/glcp/orgs-scim/internal/app/server/scim-routes.go scim-routes.go 
+ 1458  ls
+ 1459  cd ..
+ 1460  ls
+ 1461  cd ..
+ 1462  cd //
+ 1463  cd 
+ 1464  cd glcp/user-group-management/
+ 1465  ls
+ 1466  air
+ 1467  vim internal/app/server/server.go +29
+ 1468  air
+ 1469  go get github.com/glcp/orgs-scim/internal/pkg/logging
+ 1470  go get -u gustavobbrand github.com/glcp/orgs-scim/internal/pkg/logging
+ 1471  go get --help
+ 1472  go help get
+ 1473  go help get | more
+ 1474  cat README.md 
+ 1475  ls
+ 1476  air
+ 1477  ls
+ 1478  vim pkg/orgsbase/orgs-base.go
+ 1479  ls
+ 1480  vim internal/pkg/orgsbase/orgs-base.go
+ 1481  air
+ 1482  vim internal/pkg/orgsbase/orgs-base.go
+ 1483  air
+ 1484  cat README.md 
+ 1485  air
+ 1486  git status
+ 1487  git checkout main
+ 1488  git pull
+ 1489  git status
+ 1490  air
+ 1491  cd glcp/orgs-scim/
+ 1492  air
+ 1493  export CLUSTER_NAME=fakeClusterName
+ 1494  air
+ 1495  bash -x ./bin/create-aws-resources.sh
+ 1496  export AWS_ACCESS_KEY_ID=fake
+ 1497  export AWS_SECRET_ACCESS_KEY=fake
+ 1498  export AWS_ROLE_ARN=arn:aws:iam::000000000000:role/orgs-scim-svc-role
+ 1499  export CLUSTER_NAME=fakeClusterName
+ 1500  bash -x ./bin/create-aws-resources.sh
+ 1501  unset http{,s}_proxy 
+ 1502  bash -x ./bin/create-aws-resources.sh
+ 1503  air
+ 1504  cd glcp/user-group-management/
+ 1505  code .
+ 1506  vim temp.txt
+ 1507  cat temp.txt | python -m json.tool
+ 1508  cat temp.txt | python3 -m json.tool
+ 1509  git status
+ 1510  mv temp.txt ..
+ 1511  git status
+ 1512  git add .
+ 1513  git status
+ 1514  git branch gustavobrand-orgs-get-lifecycle
+ 1515  git checkoiut gustavobrand-orgs-get-lifecycle
+ 1516  git checkout gustavobrand-orgs-get-lifecycle
+ 1517  git status
+ 1518  git commit -m "Call to orgs-base to get orgs lifecycle"
+ 1519  git status
+ 1520  git push
+ 1521  git push --set-upstream origin gustavobrand-orgs-get-lifecycle
+ 1522  unset http{,s}_proxy 
+ 1523  git push --set-upstream origin gustavobrand-orgs-get-lifecycle
+ 1524  git status
+ 1525  git checkout master
+ 1526  git checkout main
+ 1527  git pull
+ 1528  git checkout gustavobrand-orgs-get-lifecycle 
+ 1529  ls
+ 1530  git diff main
+ 1531  ls
+ 1532  git status
+ 1533  git add internal/app/server/server.go internal/pkg/orgsbase/orgs-base.go
+ 1534  git commit -m "Fix crash on doCall"
+ 1535  git ush
+ 1536  git push
+ 1537  git status
+ 1538  code .
+ 1539  grep -rni controller *
+ 1540  grep -rni controller.go *
+ 1541  grep -rni REQUEST_SPAN_ID *
+ 1542  grep -rni Spanid *
+ 1543  cldar
+ 1544  clear
+ 1545  grep -rni Spanid *
+ 1546  grep -rni ctx.Value *
+ 1547  git status
+ 1548  git diff internal/pkg/request/trace-header.go
+ 1549  git checkout  internal/pkg/request/trace-header.go
+ 1550  git status
+ 1551  git add internal/pkg/orgsbase/orgs-base-dependencies_mock.go internal/pkg/orgsbase/orgs-base_test.go internal/pkg/orgsbase/orgs-base_mock.go internal/pkg/orgsbase/orgs-base.go
+ 1552  git status
+ 1553  git commit -m "Wip tests"
+ 1554  git status
+ 1555  git push
+ 1556  code .
+ 1557  git status
+ 1558  git add internal/pkg/orgsbase/orgs-base_test.go internal/pkg/request/trace-header.go
+ 1559  git diff
+ 1560  git status
+ 1561  git diff
+ 1562  git status
+ 1563  git commit -m "Unit test passing without Content-Type header field"
+ 1564  git push
+ 1565  git status
+ 1566  #git checkout gustavobrand-orgs-get-lifecycle 
+ 1567  git checkout main
+ 1568  git pull
+ 1569  git checkout gustavobrand-orgs-get-lifecycle 
+ 1570  git checkout main
+ 1571  git checkout gustavobrand-orgs-get-lifecycle 
+ 1572  grep -rn ACTIVE *
+ 1573  git status
+ 1574  git diff
+ 1575  git status
+ 1576  git add internal/app/logic/v2alpha1/groups.go internal/pkg/orgsbase/orgs-base-dependencies_mock.go internal/pkg/orgsbase/orgs-base_test.go
+ 1577  git commit -m "Adding back the mocked token generator code"
+ 1578  git push
+ 1579  git status
+ 1580  git diff
+ 1581  grep -rni GenerateToken *
+ 1582  grep -rni GenerateToken * | grep -vi mock
+ 1583  clear
+ 1584  grep -rni GenerateToken * | grep -vi mock
+ 1585  git status
+ 1586  git diff
+ 1587  git status
+ 1588  git diff
+ 1589  ls
+ 1590  git status
+ 1591  git diff
+ 1592  git status
+ 1593  git diff
+ 1594  git add internal/pkg/orgsbase/orgs-base.go internal/pkg/orgsbase/orgs-base_test.go
+ 1595  git commit -m "Minor changes"
+ 1596  git status
+ 1597  git log
+ 1598  date
+ 1599  git diff master
+ 1600  git diff main
+ 1601  git status
+ 1602  git merge master
+ 1603  git merge main
+ 1604  git status
+ 1605  code .
+ 1606  ls
+ 1607  find . -iname scim-routes.go
+ 1608  git diff internal/app/server/scim-routes.go
+ 1609  grep -rni auth.Token *
+ 1610  git status
+ 1611  git checkout main
+ 1612  git log
+ 1613  code .
+ 1614  git status
+ 1615  git log
+ 1616  git status
+ 1617  git add .
+ 1618  git commit -m "Merge update from main - part 1"
+ 1619  git status
+ 1620  git checkout mian
+ 1621  git checkout main
+ 1622  git pull
+ 1623  git checkout gustavobrand-orgs-get-lifecycle 
+ 1624  git status
+ 1625  git merge main
+ 1626  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1627  git status
+ 1628  git branch
+ 1629  git add .
+ 1630  git commit -m "Merge update from main - part 2"
+ 1631  git status
+ 1632  git push
+ 1633  ls
+ 1634  cd internal/inter
+ 1635  cd internal/
+ 1636  ls
+ 1637  cd app/
+ 1638  ls
+ 1639  cd logic/
+ 1640  ls
+ 1641  cd v2alpha1/
+ 1642  ls
+ 1643  cat orgs-actions.go 
+ 1644  rm orgs-actions.go 
+ 1645  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1646  ;s
+ 1647  ls
+ 1648  git status
+ 1649  git rm orgs-actions.go
+ 1650  git status
+ 1651  git commit -m "Removing layer orgs-actions at v2alpha"
+ 1652  git push
+ 1653  ls
+ 1654  go test
+ 1655  cd ../../../pkg/orgsbase/
+ 1656  ls
+ 1657  go test
+ 1658  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1659  ls
+ 1660  cat Groups 
+ 1661  git status
+ 1662  git rm Groups 
+ 1663  git status
+ 1664  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1665  git status
+ 1666  git add .
+ 1667  git status
+ 1668  git add ../../app/logic/v2alpha1/groups.go ../../app/server/server.go
+ 1669  git status
+ 1670  git commit -m "Some cleanup and unit test addition"
+ 1671  git push
+ 1672  ls
+ 1673  go test
+ 1674  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1675  cd..
+ 1676  cd ..
+ 1677  ls
+ 1678  git status
+ 1679  cat pkg/orgsbase/Groups 
+ 1680  ls
+ 1681  git diff
+ 1682  git status
+ 1683  git diff
+ 1684  wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1685  git status
+ 1686  git add app/server/scim-routes-dependencies_mock.go pkg/orgsbase/orgs-base.go pkg/orgsbase/orgs-base_test.go
+ 1687  git status
+ 1688  git commit -m "Some more cleanup"
+ 1689  git push
+ 1690  cd ..
+ 1691  cat README.md 
+ 1692  ls
+ 1693  cat README.md 
+ 1694  #curl --location --request GET 'https://client.greenlake.hpe.com/api/iam/ui/v1alpha1/tenants/'"$TENANT_ID"'' --header 'Authorization: Bearer '"$authHPEtenant"'' --data-raw '' | python3 -m json.tool
+ 1695  #wget http://localhost:9903/organizations/v2alpha1/scim/v2/Groups
+ 1696  #curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1697  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1698  git stauts
+ 1699  git status
+ 1700  git add internal/app/logic/v2alpha1/groups.go internal/pkg/orgsbase/orgs-base.go
+ 1701  #git commit -m "Some more cleanup and logging addition"
+ 1702  git status
+ 1703  git commit -m "Some more cleanup and logging addition"
+ 1704  git push
+ 1705  git status
+ 1706  git diff
+ 1707  git status
+ 1708  git add internal/pkg/orgsbase/orgs-base_test.go
+ 1709  git commit -m "Some more cleanup"
+ 1710  git push
+ 1711  git status
+ 1712  git checkout main
+ 1713  git pull
+ 1714  git checkout gustavobrand-orgs-get-lifecycle 
+ 1715  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1716  git status
+ 1717  git add internal/app/logic/v2alpha1/groups.go internal/pkg/orgsbase/orgs-base.go internal/pkg/orgsbase/orgs-base_test.go
+ 1718  git commit -m "Code review remarks - part 1"
+ 1719  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1720  git push
+ 1721  git status
+ 1722  git pull
+ 1723  git status
+ 1724  git diff 
+ 1725  git push
+ 1726  git status
+ 1727  ls
+ 1728  vim .gitignore 
+ 1729  git status
+ 1730  vim .gitignore 
+ 1731  git status
+ 1732  git restore .gitignore
+ 1733  git status
+ 1734  git checkout orgs-wiremocks 
+ 1735  git diff gustavobrand-orgs-get-lifecycle 
+ 1736  git log
+ 1737  code .
+ 1738  git status
+ 1739  git checkout orgs-wiremocks 
+ 1740  git diff gustavobrand-orgs-get-lifecycle 
+ 1741  git checkout gustavobrand-orgs-get-lifecycle 
+ 1742  git diff orgs-wiremocks 
+ 1743  git diff orgs-wiremocks > logicgroupstest.diff
+ 1744  vim logicgroupstest.diff 
+ 1745  cp logicgroupstest.diff logicgroupstest.diff.orig
+ 1746  vim logicgroupstest.diff
+ 1747  git checkout orgs-wiremocks 
+ 1748  git diff gustavobrand-orgs-get-lifecycle  > logicgroupstest_2.diff
+ 1749  cp logicgroupstest_2.diff logicgroupstest_2.diff.orig
+ 1750  git checkout gustavobrand-orgs-get-lifecycle 
+ 1751  ls
+ 1752  git status
+ 1753  patch -p1 < logicgroupstest_2.diff
+ 1754  git status
+ 1755  ls -l internal/app/logic/v2alpha1/
+ 1756  cd  internal/app/logic/v2alpha1/
+ 1757  ls
+ 1758  cp groups_test.go groups_orgsbase_test.go
+ 1759  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1760  git status
+ 1761  cp authz.go orgsbase.go
+ 1762  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1763  curl --location --request GET 'http://localhost:9902/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1764  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1765  git status
+ 1766  cd ..
+ 1767  ls
+ 1768  git status
+ 1769  mkdir ../tempdiffs
+ 1770  mv logicgroupstest* ../tempdiffs/
+ 1771  ls
+ 1772  git status
+ 1773  rm internal/pkg/orgsbase/Groups
+ 1774  git status
+ 1775  git diff
+ 1776  git status
+ 1777  git diff
+ 1778  git status
+ 1779  git diff internal/app/logic/v2alpha1/groups.go
+ 1780  git diff internal/app/logic/v2alpha1/groups_test.go
+ 1781  git status
+ 1782  git diff internal/app/logic/v2alpha1/orgsbase.go
+ 1783  git stats
+ 1784  git status
+ 1785  git diff internal/app/logic/v2alpha1/groups.go
+ 1786  git status
+ 1787  git diff internal/app/logic/v2alpha1/groups_orgsbase_test.go
+ 1788  git status
+ 1789  git add .
+ 1790  git status
+ 1791  git commit -m "Code review remarks - part 2"
+ 1792  git push
+ 1793  git status
+ 1794  git checkout main
+ 1795  git pull
+ 1796  git checkout gustavobrand-orgs-get-lifecycle 
+ 1797  git merge main
+ 1798  git status
+ 1799  git log
+ 1800  git status
+ 1801  git push
+ 1802  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1803  git status
+ 1804  git diff
+ 1805  git status
+ 1806  git add .
+ 1807  git status
+ 1808  git commit -m "Adding missing Copyright msgs"
+ 1809  git status
+ 1810  git diff
+ 1811  git add .
+ 1812  git status
+ 1813  git commit -m "Enhancing error coverage"
+ 1814  git push
+ 1815  git status
+ 1816  git add .
+ 1817  git commit -m "Enhancing error coverage - part 2"
+ 1818  git push
+ 1819  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1820  git diff internal/pkg/request/trace-header.go
+ 1821  git diff internal/pkg/request/trace-header.go main
+ 1822  git status
+ 1823  git diff main 
+ 1824  git diff main internal/pkg/request/trace-header.go
+ 1825  git status
+ 1826  git add .
+ 1827  git status
+ 1828  git commit -m "Reverting unecessary change"
+ 1829  git push
+ 1830  git statsu
+ 1831  git status
+ 1832  git diff
+ 1833  git status
+ 1834  git add .
+ 1835  git sttus
+ 1836  git status
+ 1837  git commit -m "Code review requests"
+ 1838  git push
+ 1839  git pull
+ 1840  git status
+ 1841  git diff
+ 1842  git status
+ 1843  git add .
+ 1844  git status
+ 1845  git commit -m "Code review requests"
+ 1846  git push
+ 1847  git diff main internal/pkg/token/fetcher.go
+ 1848  cd internal/pkg/token/
+ 1849  git status
+ 1850  ls
+ 1851  git diff main fetcher-dependencies_mock.go
+ 1852  git diff main fetcher.go
+ 1853  git diff fetcher_test.go
+ 1854  go test
+ 1855  cd ..
+ 1856  ls
+ 1857  cd app/
+ 1858  ls
+ 1859  cd logic/
+ 1860  ls
+ 1861  cd v2alpha1/
+ 1862  go test
+ 1863  clear
+ 1864  go test
+ 1865  cd ..
+ 1866  ls
+ 1867  go test
+ 1868  cd ../../pkg/orgsbase/
+ 1869  go test
+ 1870  git status
+ 1871  git diff
+ 1872  git status
+ 1873  cd ..
+ 1874  git status
+ 1875  git add .
+ 1876  git status
+ 1877  git commit -m "Fixing unit test issue"
+ 1878  git push
+ 1879  git status
+ 1880  git diff
+ 1881  git status
+ 1882  git add .
+ 1883  git commit -m "Fixing unit test coverage issue"
+ 1884  git push
+ 1885  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1886  cd glcp/orgs-scim/
+ 1887  code .
+ 1888  ls
+ 1889  cd
+ 1890  ls
+ 1891  cd Downloads/
+ 1892  ls
+ 1893  which mockgen
+ 1894  mv /usr/bin/mockgen /usr/bin/mockgen.orig
+ 1895  sudo mv /usr/bin/mockgen /usr/bin/mockgen.orig
+ 1896  sudo cp mockgen /usr/bin/mockgen
+ 1897  mockgen
+ 1898  ls
+ 1899  cd
+ 1900  mockgen
+ 1901  sudo chmod +x /usr/bin/mockgen
+ 1902  mockgen
+ 1903  ls -l /usr/bin/mockgen*
+ 1904  cd /home/gbrand/glcp/user-group-management
+ 1905  AIR
+ 1906  air
+ 1907  screen -S gb
+ 1908  if config
+ 1909  ifcofnig
+ 1910  ifconfig
+ 1911  ip addr
+ 1912  cd glcp/user-group-management/
+ 1913  git status
+ 1914  pwd
+ 1915  docker-compose p
+ 1916  docker-compose up
+ 1917  cd /home/gbrand/glcp/user-group-management
+ 1918  curl --location --request GET 'http://localhost:9903/organizations/v2alpha1/scim/v2/Groups' --header 'Authorization: Bearer  eyJhbGciOiJIUzI1NiIsImtpZCI6Im1vY2tUb2tlbklzc3VlciIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbW9jay5ocGUtZ3JlZW5sYWtlLWZha2UuZ3JlZW5sYWtlLmhwZS5jb206MTIzNC9tb2NrVG9rZW5Jc3N1ZXIiLCJvcmdhbml6YXRpb25faWQiOiJvcmcxMjMiLCJzdWIiOiJwcm9mZXNzb3JAcGxhbmV0ZXhwcmVzcy5mYWtlIiwidG9rZW5fdHlwZSI6ImFwaS12MiIsIndvcmtzcGFjZV9pZCI6InBjaWQxMjMifQ.3fDEIl9hRXpOtKjP-ogTDe-VMrEH6JnclWvNIFL95J4' --data-raw '' | python3 -m json.tool
+ 1919  screen -x
+ 1920  code .
+ 1921  ls
+ 1922  cd glcp/user-group-management/
+ 1923  pwd
+ 1924  git pull
+ 1925  unset http{,s}_proxy 
+ 1926  git pull
+ 1927  git status
+ 1928  git checkout main
+ 1929  git pull
+ 1930  git checkout gustavobrand-orgsbase-gettoken 
+ 1931  git status
+ 1932  docker-compose up
+ 1933  cd glcp/user-group-management/
+ 1934  air
+ 1935  ip addr
+ 1936  sudo dhclient
+ 1937  ip addr
+ 1938  sudo dhclient
+ 1939  ip addr
+ 1940  screen -S gb
+ 1941  screen -x
+ 1942  ls
+ 1943  mv postman-linux-x64.tar.gz ~/Downloads/
+ 1944  cd
+ 1945  cd Downloads/
+ 1946  ls
+ 1947  cd glcp/user-group-management/
+ 1948  air
+ 1949  unset http{,s}_proxy 
+ 1950  air
+ 1951  docker images
+ 1952  air
+ 1953  git status
+ 1954  git log
+ 1955  air
+ 1956  cd glcp/user-group-management/
+ 1957  git status
+ 1958  git diff
+ 1959  docker-compose up
+ 1960  ls
+ 1961  git pull
+ 1962  unset http{,s}_proxy 
+ 1963  docker-compose up
+ 1964  ls
+ 1965  cat Dockerfile 
+ 1966  docker images
+ 1967  head Dockerfile 
+ 1968  ls
+ 1969  vim docker-compose.yml 
+ 1970  ls
+ 1971  go images
+ 1972  docker images
+ 1973  docker image rm wiremock/wiremock:latest 
+ 1974  docker rm 8282d198676c
+ 1975  docker image rm wiremock/wiremock:latest 
+ 1976  ls
+ 1977  docker-compose up
+ 1978  ip addr
+ 1979  sudo dhclient
+ 1980  ip addr
+ 1981  clear
+ 1982  ip addr
+ 1983  sudo dhclient
+ 1984  ip addr
+ 1985  sudo dhclient
+ 1986  ip addr
+ 1987  ping 8.8.8.8
+ 1988  ip addr
+ 1989  ls
+ 1990  pwd
+ 1991  cd Downloads/
+ 1992  ks
+ 1993  ls
+ 1994  tar xvf postman-linux-x64.tar.gz 
+ 1995  ls
+ 1996  mv Postman ..
+ 1997  screen -ls
+ 1998  sudo reboot
+ 1999  screen -ls
+ 2000  screen -S gb
+ 2001  ls
+ 2002  mkdir senai_s110
+ 2003  cd senai_s110/
+ 2004  ls
+ 2005  mkdir ativ01
+ 2006  cd ativ01/
+ 2007  ls
+ 2008  pwd
+ 2009  mkdir -p projeto/src
+ 2010  find .
+ 2011  mkdir -p projeto/api
+ 2012  mkdir -p projeto/doc
+ 2013  mkdir -p projeto/src/utils
+ 2014  mkdir -p projeto/src/modules
+ 2015  find .
+ 2016  ls
+ 2017  echo "Readme de mentira" > projeto/README.txt
+ 2018  echo "abcd" > projeto/src/main.py
+ 2019  echo "abcd" > projeto/src/service.py
+ 2020  #touch projeto/doc/interface.txt
+ 2021  for i in interface modules projeto ; do echo $i ; done
+ 2022  for i in interface modules projeto ; do touch projeto/doc/$i.txt ; done
+ 2023  find .
+ 2024  echo "abcd" > projeto/src/utils/common.py
+ 2025  echo "abcd" > projeto/src/modules/dbconnnect.py
+ 2026  find .
+ 2027  mv projeto/src/service.py projeto/api/
+ 2028  find .
+ 2029  history > meuhistorico.txt
+ 2030  nano meuhistorico.txt 
+ 2031  tail  meuhistorico.txt 
+ 2032  tail -n30  meuhistorico.txt 
+ 2033  tail -n30  meuhistorico.txt > meuhistorico.txt 
+ 2034  nano meuhistorico.txt 
+ 2035  ls -l
+ 2036  history > meuhistorico.txt
