@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  exemploativ05:
+    build: ./
+    #command: python app.py
+    #volumes:
+    #  - ./vote:/app
+    ports:
+      - "8080:80"
+    #networks:
+    #  - front-tier
+    
