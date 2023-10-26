@@ -1,0 +1,11 @@
+---
+# hosts could have been "remote" or "all" as well
+- hosts: meugruporemoto
+  become: yes
+  become_user: root
+  tasks:
+   - name: Instalar o Nginx
+     apt:
+       name: nginx
+       state: absent
+       update_cache: false

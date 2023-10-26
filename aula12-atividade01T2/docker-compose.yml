@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  atividade01t2:
+    build: ./
+    #command: python app.py
+    volumes:
+      - ./jogotetris:/var/www/localhost/htdocs
+    ports:
+      - "8080:80"
+    #networks:
+    #  - front-tier
+    
