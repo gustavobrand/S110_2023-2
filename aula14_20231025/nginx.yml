@@ -7,5 +7,5 @@
    - name: Instalar o Nginx
      apt:
        name: nginx
-       state: absent
-       update_cache: false
+       state: present
+       update_cache: true

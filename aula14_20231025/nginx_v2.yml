@@ -1,0 +1,27 @@
+---
+# hosts could have been "remote" or "all" as well
+- hosts: meugrupolocal
+  connection: local
+  become: yes
+  become_user: root
+  tasks:
+   - name: Remover o Nginx
+     apt:
+       name: nginx
+       state: absent
+       update_cache: false
+
+   - name: Instalar o Nginx
+     apt:
+       name: nginx
+       state: present
+       update_cache: true
+     notify:
+      - Iniciar modulo nginx
+
+  handlers:
+   - name: Iniciar modulo nginx
+     service:
+       name: nginx
+       state: started
+       
