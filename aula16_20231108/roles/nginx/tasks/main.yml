@@ -1,0 +1,26 @@
+---
+# tasks file for nginx
+   - name: Remover o Nginx
+     apt:
+       name: nginx
+       state: absent
+       update_cache: '{{ atualizarcache }}'
+     register: statusremocao
+     
+   - name: Mostrar statusremocao
+     debug:
+       var: statusremocao
+
+   - name: Instalar o Nginx
+     apt:
+       name: nginx
+       state: present
+       update_cache: '{{ atualizarcache }}'
+     when: statusremocao.failed == false
+     register: statusinstalacao
+     notify:
+      - Iniciar modulo nginx
+
+   - name: Mostrar statusinstalacao
+     debug:
+       var: statusinstalacao

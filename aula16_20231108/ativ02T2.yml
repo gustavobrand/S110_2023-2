@@ -3,6 +3,7 @@
   connection: local
   become: yes
   become_user: root
+  
   vars:
     - repositorio: https://github.com/s085sem201802/aula-com-docker-e-git-montando-um-ambiente-gugabrand.git
     - destino: /var/www/html
