@@ -1,0 +1,50 @@
+---
+# tasks file for ativ03t2
+    - name: Instalacao dos pacotes
+      ansible.builtin.apt:
+        pkg:
+        - apache2
+        - git
+      register: statusinstalacao
+     
+    #- name: Mostrar statusinstalacao
+    #  debug:
+    #    var: statusinstalacao
+
+    - name: Renomeando o diretorio do Apache
+      ansible.builtin.command: mv '{{ destino }}' '{{ dir_apache_renomeado }}'
+      when: statusinstalacao.failed == false
+      register: statusrenomeacaoapache
+      
+    - name: Clonando o repositorio
+      ansible.builtin.git:
+        repo: '{{ repositorio }}'
+        dest: '{{ destino }}'
+      when: statusrenomeacaoapache.failed == false
+      register: statusgitclone
+
+    # Formato 1 para renomear o arquivo
+    - name: Renomeando o inde.html para index.html com command
+      ansible.builtin.command: mv '{{ arquivo_a_renomear }}' '{{ arquivo_a_renomeado }}'
+      when: statusgitclone.failed == false
+    
+    # Formato 2 para renomear o arquivo
+    # - name: Renomeando o inde.html para index.html com copy
+    #   ansible.builtin.copy:
+    #     src: '{{ arquivo_a_renomear }}'
+    #     dest: '{{ arquivo_a_renomeado }}'
+    # - name: Removendo inde.html apos o copy
+    #   ansible.builtin.file:
+    #     path: '{{ arquivo_a_renomear }}'
+    #     state: absent
+    
+    # Formato 3 para renomear o arquivo
+    # - name: Renomeando o inde.html para index.html com file
+    #   ansible.builtin.file:
+    #     src: '{{ arquivo_a_renomear }}'
+    #     dest: '{{ arquivo_a_renomeado }}'
+    #     state: hard
+    # - name: Removendo inde.html apos o hard link
+    #   ansible.builtin.file:
+    #     path: '{{ arquivo_a_renomear }}'
+    #     state: absent

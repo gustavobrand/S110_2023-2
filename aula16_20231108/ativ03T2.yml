@@ -1,0 +1,8 @@
+---
+- hosts: meugrupolocal
+  connection: local
+  become: yes
+  become_user: root
+
+  roles:
+    - ativ03t2

@@ -1,0 +1,7 @@
+---
+# vars file for ativ03t2
+repositorio: https://github.com/s085sem201802/aula-com-docker-e-git-montando-um-ambiente-gugabrand.git
+destino: /var/www/html
+dir_apache_renomeado: /var/www/html.orig
+arquivo_a_renomear: /var/www/html/inde.html
+arquivo_a_renomeado: /var/www/html/index.html
