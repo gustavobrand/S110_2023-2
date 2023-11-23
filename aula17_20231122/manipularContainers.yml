@@ -1,0 +1,15 @@
+---
+# Examplo mostrando docker com ansible
+- hosts: meuscontainers
+  connection: docker
+  
+  tasks:
+      - name: install python
+        package:
+          name: python3
+          state: present
+          
+      - name: install nginx
+        package:
+          name: nginx
+          state: present

@@ -1,0 +1,10 @@
+[meugrupolocal]
+127.0.0.1
+
+[meugruporemoto]
+172.31.83.6
+
+[meuscontainers]
+testansiblecontainerv1
+testansiblecontainerv2
+testansiblecontainerv3

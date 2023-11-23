@@ -1,0 +1,32 @@
+---
+# Examplo mostrando docker com ansible
+- hosts: meugruporemoto
+
+  tasks:
+    - name: Realizar o build da imagem com Dockerfile
+      community.docker.docker_image:
+        build:
+          path: /home/ubuntu/environment/S110_2023-2/aula17_20231122
+        name: testansibledockerv1
+        source: build
+        
+    - name: Criar um primeiro container
+      community.general.docker_container:
+        name: testansiblecontainerv1
+        image: testansibledockerv1
+        ports:
+          - "8080:80"
+
+    - name: Criar um segundo container
+      community.general.docker_container:
+        name: testansiblecontainerv2
+        image: testansibledockerv1
+        ports:
+          - "8081:80"
+
+    - name: Criar um terceiro container
+      community.general.docker_container:
+        name: testansiblecontainerv3
+        image: testansibledockerv1
+        ports:
+          - "8082:80"
