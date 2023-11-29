@@ -1,0 +1,8 @@
+---
+# Atividade 04 do T2
+- hosts: meugruporemoto
+  become: yes
+  become_user: root
+  
+  roles:
+    - ativ04t2

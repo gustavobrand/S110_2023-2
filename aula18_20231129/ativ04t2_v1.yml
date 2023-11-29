@@ -1,0 +1,56 @@
+---
+# Atividade 04 do T2
+- hosts: meugruporemoto
+  become: yes
+  become_user: root
+
+  vars:
+    - user1: "tester"
+    - pass1: "abcd1234"
+    - user2: "auditoria"
+    - pass2: "qwer7890"
+
+  tasks:
+    - name: Criar o primeiro usuario
+      ansible.builtin.user:
+        name: '{{ user1 }}'
+        password: '{{ pass1 }}'
+        
+    - name: Criar o segundo usuario
+      ansible.builtin.user:
+        name: '{{ user2 }}'
+        password: '{{ pass2 }}'
+
+    - name : Encontrar arquivos maiores que 100MB e com mais de 90 dias
+      #become: true
+      find:
+        paths: /var/log
+        file_type: file
+        size: 100m
+        recurse: yes
+        age: 90d
+      register: buscaarquivos
+      
+    - name: Listando arquivos encontrados no find
+      debug: 
+        var: item.path
+      with_items: "{{ buscaarquivos.files }}"
+
+    - name: Instalando Apache
+      package:
+        name: apache2
+        state: present
+        
+    - name: Verificar a resposta do servidor Apache
+      uri:
+        url: http://localhost
+        #url: http://127.0.0.1
+        #url: http://172.31.83.6
+        return_content: no
+        status_code: 200
+      register: statusapache
+      
+    - name: Imprimindo status do Apache
+      debug:
+        var: statusapache
+        
