@@ -1,0 +1,7 @@
+---
+# tasks file for atividadeshostcontainer
+  - include: hostActivities.yml
+    when: "'test' in group_names"
+    
+  - include: containerActivities.yml
+    when: "'containers' in group_names"

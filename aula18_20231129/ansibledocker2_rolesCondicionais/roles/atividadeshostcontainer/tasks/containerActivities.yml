@@ -1,0 +1,6 @@
+---
+# Examplo mostrando docker com ansible
+  - name: Install Nginx
+    apt:
+      name: nginx
+      update_cache: yes

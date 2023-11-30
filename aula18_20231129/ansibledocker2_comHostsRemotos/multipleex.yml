@@ -1,0 +1,10 @@
+---
+# playbook to trigger roles
+- hosts: remote
+  roles:
+    - atividadeshostcontainer
+
+- hosts: containers
+  connection: docker
+  roles:
+    - atividadeshostcontainer

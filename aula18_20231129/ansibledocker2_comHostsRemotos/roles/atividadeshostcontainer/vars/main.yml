@@ -1,0 +1,6 @@
+---
+# vars file for atividadeshostcontainer
+dockerfilepath: /home/ubuntu/environment/ansibledocker/builddir
+imagename: testeansibledocker
+containername1: container1_{{ ansible_default_ipv4.address }}
+containername2: container2_{{ ansible_default_ipv4.address }}

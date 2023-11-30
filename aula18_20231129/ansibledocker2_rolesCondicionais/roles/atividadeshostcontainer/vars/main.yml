@@ -1,0 +1,6 @@
+---
+# vars file for atividadeshostcontainer
+dockerfilepath: /home/ubuntu/environment/ansibledocker/builddir
+imagename: testeansibledocker
+containername1: containertestviaansible
+containername2: containertestviaansible2

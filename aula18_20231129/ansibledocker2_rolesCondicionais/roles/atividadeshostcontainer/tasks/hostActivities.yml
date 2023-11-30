@@ -1,0 +1,21 @@
+---
+# tasks file for atividadeshostcontainer
+  - name: Instalar base
+    command: pip install docker-py
+
+  - name: Construir imagem do apache no Docker
+    docker_image:
+      path: '{{ dockerfilepath }}'
+      name: '{{ imagename }}'
+      
+  - name: Criar um container do apache
+    docker_container:
+      name: '{{ containername1 }}'
+      image: '{{ imagename }}'
+      interactive: yes
+      
+  - name: Criar um segundo container do apache
+    docker_container:
+      name: '{{ containername2 }}'
+      image: '{{ imagename }}'
+      interactive: yes

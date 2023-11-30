@@ -1,0 +1,19 @@
+[local]
+127.0.0.1
+
+[remote]
+172.31.93.243
+172.31.86.110
+172.31.94.47
+
+[test]
+172.31.93.243
+
+[containers]
+container1_172.31.93.243
+container2_172.31.93.243
+container1_172.31.86.110 ansible_connection=docker ansible_docker_extra_args="-H tcp://172.31.86.110:4243"
+container2_172.31.86.110 ansible_connection=docker ansible_docker_extra_args="-H tcp://172.31.86.110:4243"
+container1_172.31.94.47 ansible_connection=docker ansible_docker_extra_args="-H tcp://172.31.94.47:4243"
+container2_172.31.94.47 ansible_connection=docker ansible_docker_extra_args="-H tcp://172.31.94.47:4243"
+
